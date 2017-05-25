@@ -24,6 +24,7 @@ public class DBTest {
 		// TODO Auto-generated method stub
 		System.out.println("<< 변경 전 >>");
 		crud(IDBManager.getDBObject("SYBASE"));
+		System.out.println();
 		System.out.println("<< 변경 후 >>");
 		crud(IDBManager.getDBObject("ORACLE"));
 	}
@@ -33,6 +34,5 @@ public class DBTest {
 		db.search();
 		db.update();
 		db.delete();
-		System.out.println();
 	}
 }
